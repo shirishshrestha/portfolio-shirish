@@ -1,3 +1,41 @@
+var tl = gsap.timeline();
+
+gsap.to(".loader", {
+  x: "-102%",
+  // y: "100%",
+  duration: 2,
+  ease: "easeOut",
+});
+gsap.to(".loader__two", {
+  x: "102%",
+  // y: "-100%",
+  duration: 2,
+  ease: "easeOut",
+});
+
+tl.from(".hero__title h2:first-child", {
+  x: -200,
+  delay: 1.8,
+  opacity: 0,
+  duration: 0.5,
+  ease: "power1.inOut",
+});
+
+tl.from(".hero__title h2:last-child", {
+  x: 200,
+  opacity: 0,
+  duration: 0.5,
+  ease: "power1.inOut",
+});
+
+tl.from(".hero__title div h5", {
+  y: 100,
+  opacity: 0,
+  duration: 0.5,
+  ease: "power1.inOut",
+  stagger: 0.4,
+});
+
 gsap.to(".scroll__icon", {
   y: "20px",
   ease: "power2.inOut",
