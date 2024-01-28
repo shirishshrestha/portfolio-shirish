@@ -127,7 +127,6 @@ Shery.imageEffect(".pimages", {
         trigger: description,
         start: "50% 5%",
         scrub: 1,
-        markers: true,
         end: "110%",
         onUpdate: function (prog) {
           setScroll(prog.progress + index);
