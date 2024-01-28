@@ -67,6 +67,8 @@ body {
   font-size: 5rem;
   line-height: 150%;
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1875rem;
 }
 
 .loader__container {
@@ -95,6 +97,30 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+}
+
+.background__image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.hero__image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image img {
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  opacity: 0.2;
+  border-radius: 20%;
 }
 
 .logo {
@@ -305,3 +331,76 @@ main {
   top: 0;
   left: 0;
 }
+
+/* projects page */
+.projects {
+  padding: 2rem 15rem 7rem;
+}
+
+.project__content {
+  height: 100vh;
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__desc {
+  overflow: hidden;
+  height: inherit;
+  width: 45%;
+}
+
+.desc__elem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desc__elem h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.desc__elem h2 {
+  line-height: 150%;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.elem__para p {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project__images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: inherit;
+  width: 45%;
+}
+
+.pimages {
+  width: 90%;
+  height: 90%;
+}
+
+.pimages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* stack */
+.stack {
+  height: 100%;
+  width: 100%;
+}
+
