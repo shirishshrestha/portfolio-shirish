@@ -88,6 +88,11 @@ body {
   z-index: 99;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 /* landing page */
 .header {
   padding: 0 8rem;
@@ -143,7 +148,7 @@ body {
 }
 
 .navbar li {
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
   font-weight: 500;
   border: 1px solid var(--text-color);
   font-size: 18px;
@@ -369,6 +374,11 @@ main {
   line-height: 150%;
   font-size: 3rem;
   font-weight: 400;
+  text-transform: capitalize;
+}
+
+.desc__last h2 {
+  font-size: 2.7rem;
 }
 
 .elem__para p {
@@ -376,6 +386,55 @@ main {
   line-height: 150%;
   font-weight: 300;
   opacity: 0.8;
+}
+
+.button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+  border-radius: 150px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--text-color);
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.button a {
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.button i {
+  transform: rotate(45deg);
+  transition: all 0.4s ease;
+}
+
+.button:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+.button:hover a {
+  color: var(--background) !important;
+}
+
+.button:hover i {
+  transform: rotate(90deg);
 }
 
 .project__images {
@@ -395,12 +454,109 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+}
+
+.project__github--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.project__github--button > .button {
+  font-size: 2rem;
 }
 
 /* stack */
 .stack {
   height: 100%;
   width: 100%;
+  margin-top: -7rem;
 }
 
+.stack__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stack__title {
+  font-family: leafy;
+  text-align: center;
+  font-weight: 800;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+.stack__images {
+  height: 5.5rem;
+  width: 5.5rem;
+  position: absolute;
+}
+
+.tech__first {
+  top: 17%;
+  left: 15%;
+}
+
+.tech__second {
+  top: 33%;
+  left: 25%;
+}
+
+.tech__third {
+  top: 45%;
+  left: 15%;
+}
+
+.tech__fourth {
+  top: 58%;
+  left: 25%;
+}
+
+.tech__fifth {
+  height: 6rem;
+  width: 6rem;
+  top: 70%;
+  left: 15%;
+}
+
+.tech__sixth {
+  top: 17%;
+  right: 15%;
+}
+
+.tech__seventh {
+  height: 10rem;
+  width: 10rem;
+  top: 30%;
+  right: 23%;
+}
+
+.tech__eight {
+  top: 43%;
+  right: 15%;
+}
+
+.tech__ninth {
+  top: 56%;
+  right: 25%;
+}
+
+.tech__tenth {
+  top: 68%;
+  right: 15%;
+}
+
+.stack__images img {
+  height: auto;
+  width: inherit;
+  object-fit: cover;
+}
+
+.tech__eight {
+  filter: invert(1);
+}

@@ -119,7 +119,7 @@ gsap.to(".desc__elem", {
 
 let description = document.querySelectorAll(".desc__elem");
 Shery.imageEffect(".pimages", {
-  style: 3,
+  style: 4,
   config: { onMouse: { value: 1 } },
   slideStyle: (setScroll) => {
     description.forEach(function (description, index) {
