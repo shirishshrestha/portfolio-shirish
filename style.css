@@ -498,57 +498,60 @@ main {
 }
 
 .tech__first {
-  top: 17%;
-  left: 15%;
+  top: 19%;
+  left: 18%;
 }
 
 .tech__second {
   top: 33%;
-  left: 25%;
+  left: 28%;
 }
 
 .tech__third {
-  top: 45%;
-  left: 15%;
+  top: 47%;
+  left: 18%;
 }
 
 .tech__fourth {
-  top: 58%;
-  left: 25%;
+  top: 61%;
+  left: 28%;
 }
 
 .tech__fifth {
-  height: 6rem;
-  width: 6rem;
-  top: 70%;
-  left: 15%;
+  top: 73%;
+  left: 17%;
+}
+
+.tech__fifth {
+  height: auto;
+  width: 8rem;
 }
 
 .tech__sixth {
-  top: 17%;
-  right: 15%;
+  top: 19%;
+  right: 18%;
 }
 
 .tech__seventh {
   height: 10rem;
   width: 10rem;
-  top: 30%;
-  right: 23%;
-}
-
-.tech__eight {
-  top: 43%;
-  right: 15%;
-}
-
-.tech__ninth {
-  top: 56%;
+  top: 32%;
   right: 25%;
 }
 
+.tech__eight {
+  top: 47%;
+  right: 18%;
+}
+
+.tech__ninth {
+  top: 61%;
+  right: 28%;
+}
+
 .tech__tenth {
-  top: 68%;
-  right: 15%;
+  top: 73%;
+  right: 18%;
 }
 
 .stack__images img {
@@ -559,4 +562,10 @@ main {
 
 .tech__eight {
   filter: invert(1);
+}
+
+/* download cv  */
+.portfolio__cv {
+  height: 100vh;
+  width: 100%;
 }

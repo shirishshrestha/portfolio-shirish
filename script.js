@@ -4,7 +4,7 @@ Shery.mouseFollower({
   duration: 1,
 });
 
-Shery.makeMagnet(".logo a, .scroll", {
+Shery.makeMagnet(".logo a, .scroll, .project__github--button .button", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
@@ -133,5 +133,32 @@ Shery.imageEffect(".pimages", {
         },
       });
     });
+  },
+});
+
+gsap.from(".tech__stack--left .stack__images", {
+  x: "100%",
+  opacity: 0,
+  duration: 1.5,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".project__github--button",
+    endTrigger: ".tech__third",
+    scrub: 3,
+    start: "top 15%",
+    end: "bottom 60%",
+  },
+});
+gsap.from(".tech__stack--right .stack__images", {
+  x: "-100%",
+  opacity: 0,
+  duration: 1.5,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".project__github--button",
+    endTrigger: ".tech__third",
+    scrub: 3,
+    start: "top 15%",
+    end: "bottom 60%",
   },
 });
