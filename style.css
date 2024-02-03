@@ -482,7 +482,7 @@ main {
 .stack {
   height: 100%;
   width: 100%;
-  margin-top: -7rem;
+  margin-top: -9rem;
 }
 
 .stack__container {
@@ -575,7 +575,7 @@ main {
   filter: invert(1);
 }
 
-/* download cv  */
+/* portfolio footer  */
 .portfolio__footer {
   padding: 1rem 12rem 3rem;
   height: fit-content;
@@ -657,4 +657,13 @@ main {
   color: #e9f1f3;
   cursor: pointer;
   margin-top: 1rem;
+}
+
+.form__btn p {
+  position: relative;
+  z-index: 9;
+}
+
+.form__btn:hover p {
+  color: #080808;
 }
