@@ -63,7 +63,7 @@ body {
 }
 
 .heading {
-  font-family: pixel;
+  font-family: leafy;
   font-size: 5rem;
   line-height: 150%;
   text-transform: uppercase;
@@ -306,23 +306,34 @@ main {
   padding: 3rem 0;
 }
 
-.about__desc {
+/* .about__desc {
   font-size: 2.5rem;
   text-align: start;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   padding-top: 1.5rem;
+} */
+
+.about__me {
+  display: grid;
+  place-content: center;
+  padding: 1rem 14em;
 }
 
-.about__desc p {
+.about__me p {
+  font-size: 2.3rem;
+  line-height: 150%;
+}
+
+/* .about__desc p {
   padding: 2rem 5rem;
   border-bottom: 1px solid var(--text-color);
   position: relative;
   z-index: 9;
-}
+} */
 
-.stripe {
+/* .stripe {
   height: fit-content;
   width: 100%;
   position: relative;
@@ -335,7 +346,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 /* projects page */
 .projects {
@@ -565,7 +576,85 @@ main {
 }
 
 /* download cv  */
-.portfolio__cv {
-  height: 100vh;
+.portfolio__footer {
+  padding: 1rem 12rem 3rem;
+  height: fit-content;
   width: 100%;
+}
+
+.portfolio__footer h2 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.portfolio__footer--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem 0;
+}
+
+.portfolio__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info__content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info__content i {
+  font-size: 3rem;
+  width: 3rem;
+}
+
+.info__desc h5 {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.info__desc p {
+  font-size: 1.2rem;
+}
+
+#successMessage {
+  display: none;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contactForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+#contactForm input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e9f1f374;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  line-height: 150%;
+  color: #e9f1f3ec;
+}
+
+#contactForm input:focus {
+  border-bottom: 1px solid #e9f1f3;
+}
+
+.form__btn {
+  color: #e9f1f3;
+  cursor: pointer;
+  margin-top: 1rem;
 }

@@ -95,7 +95,7 @@
       <!-- About me  -->
       <section class="main-container about" id="about">
         <h2 class="heading about__heading">Who Am I</h2>
-        <div class="about__desc">
+        <!-- <div class="about__desc">
           <div class="stripe">
             <div class="stripe__inner"></div>
             <p>
@@ -125,6 +125,18 @@
               growth.
             </p>
           </div>
+        </div> -->
+        <div class="about__me">
+          <p class="reveal--para">
+            Enthusiastic student aspiring to excel in Frontend Development.
+            <br />
+            Currently honing skills in HTML, CSS, JavaScript, & React. <br />
+            Passionate about crafting engaging web experiences. <br />
+            Eager to learn & amplify expertise in the dynamic world of web
+            development. <br />
+            Wholeheartedly committed to lifelong learning for continuous
+            personal & professional development.
+          </p>
         </div>
       </section>
 
@@ -263,11 +275,60 @@
           </div>
         </div>
       </section>
-      
-      <!-- download cv -->
-      <div class="portfolio__cv"></div>
+
+      <!-- portfolio footer -->
+      <section class="portfolio__footer">
+        <h2 class="heading">Let's Talk</h2>
+        <div class="portfolio__footer--content">
+          <div class="portfolio__footer--left">
+            <div class="portfolio__info">
+              <div class="info__content">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info__desc">
+                  <h5>Address</h5>
+                  <p>Suryabinayak-2, Bhaktapur</p>
+                </div>
+              </div>
+              <div class="info__content">
+                <i class="fa-solid fa-phone"></i>
+                <div class="info__desc">
+                  <h5>Phone</h5>
+                  <p><a href="tel:9869194444">+977 9869194444</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__form">
+            <form
+              onsubmit="handleSubmit(event)"
+              id="contactForm"
+              autocomplete="off"
+            >
+              <label>
+                Full Name:
+                <input type="name" name="name" />
+              </label>
+              <label>
+                Your email:
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Your message:
+                <input name="message" />
+              </label>
+              <button class="button form__btn" type="submit">
+                Send Message
+              </button>
+            </form>
+
+            <div id="successMessage">
+              Your form has been successfully submitted.
+              <p>We will contact you soon!</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
       integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
@@ -286,10 +347,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script
       type="text/javascript"
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
