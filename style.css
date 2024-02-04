@@ -1136,6 +1136,12 @@ main {
   .about__me {
     padding: 1.75rem 0.5rem;
   }
+  .projects {
+    padding: 0 0.5rem;
+  }
+  .portfolio__footer {
+    padding: 0 0.5rem 2rem;
+  }
 }
 
 @media (width<321px) {
@@ -1152,10 +1158,6 @@ main {
 
   .about__me p {
     font-size: 1rem;
-  }
-
-  .projects {
-    padding: 0 0.5rem;
   }
 
   .project__github--button {
