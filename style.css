@@ -1029,7 +1029,7 @@ main {
   }
 
   .hamburger {
-    display: inline;
+    display: block;
   }
 
   .navbar-mobile {
