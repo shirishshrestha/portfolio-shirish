@@ -1,4 +1,4 @@
-if (window.innewrwidth >= 1150) {
+if (window.innerWidth >= 1150) {
   Shery.mouseFollower({
     skew: true,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
@@ -10,6 +10,43 @@ if (window.innewrwidth >= 1150) {
     duration: 1,
   });
 }
+
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", () => {
+  let time = gsap.timeline();
+  time.to(".navbar-mobile", {
+    y: "100%",
+    duration: 1,
+    ease: "power1.inOut",
+  });
+  time.from(".navbar-mobile li", {
+    x: "-100%",
+    duration: 0.5,
+    stagger: 0.1,
+    opacity: 0,
+    ease: "power1.inOut",
+  });
+});
+
+const cross = document.querySelector(".cross");
+const navbar = document.querySelectorAll(".navbar-mobile li");
+cross.addEventListener("click", () => {
+  gsap.to(".navbar-mobile", {
+    y: "-100%",
+    duration: 1,
+    ease: "power1.inOut",
+  });
+});
+
+navbar.forEach(function (navbar) {
+  navbar.addEventListener("click", () => {
+    gsap.to(".navbar-mobile", {
+      y: "-100%",
+      duration: 1,
+      ease: "power1.inOut",
+    });
+  });
+});
 
 var tl = gsap.timeline();
 
@@ -125,44 +162,41 @@ splitTypes.forEach((char, i) => {
 //   });
 // });
 
-const changeDesign = () => {
-  if (window.innerWidth >= 1100) {
-    gsap.to(".desc__elem", {
-      scrollTrigger: {
-        trigger: ".project__content",
-        pin: true,
-        start: "top top",
-        end: "bottom bottom",
-        endTrigger: ".desc__last",
-        scrub: 1,
-      },
-      y: "-300%",
-      ease: "power1.in",
-    });
-    let description = document.querySelectorAll(".desc__elem");
-    Shery.imageEffect(".pimages", {
-      style: 4,
-      config: { onMouse: { value: 1 } },
-      slideStyle: (setScroll) => {
-        description.forEach(function (description, index) {
-          ScrollTrigger.create({
-            trigger: description,
-            start: "50% 5%",
-            scrub: 1,
-            end: "110%",
-            onUpdate: function (prog) {
-              setScroll(prog.progress + index);
-            },
-          });
+if (window.innerWidth >= 1100) {
+  gsap.to(".desc__elem", {
+    scrollTrigger: {
+      trigger: ".project__content",
+      pin: true,
+      start: "top top",
+      end: "bottom bottom",
+      endTrigger: ".desc__last",
+      scrub: 1,
+    },
+    y: "-300%",
+    ease: "power1.in",
+  });
+
+  let description = document.querySelectorAll(".desc__elem");
+  Shery.imageEffect(".pimages", {
+    style: 4,
+    config: { onMouse: { value: 1 } },
+    slideStyle: (setScroll) => {
+      description.forEach(function (description, index) {
+        ScrollTrigger.create({
+          trigger: description,
+          start: "50% 5%",
+          scrub: 1,
+          end: "110%",
+          onUpdate: function (prog) {
+            setScroll(prog.progress + index);
+          },
         });
-      },
-    });
-  } else if (window.innerWidth < 1100) {
-    let images = document.querySelector(".project__images");
-    images.style.display = "none";
-  }
-};
-changeDesign();
+      });
+    },
+  });
+} else if (window.innerWidth < 1100) {
+  document.querySelector(".project__images").style.display = "none";
+}
 
 if (window.innerWidth >= 1150) {
   gsap.from(".tech__stack--left .stack__images", {
