@@ -32,7 +32,7 @@ const cross = document.querySelector(".cross");
 const navbar = document.querySelectorAll(".navbar-mobile li");
 cross.addEventListener("click", () => {
   gsap.to(".navbar-mobile", {
-    y: "-100%",
+    y: "-120%",
     duration: 1,
     ease: "power1.inOut",
   });
@@ -41,7 +41,7 @@ cross.addEventListener("click", () => {
 navbar.forEach(function (navbar) {
   navbar.addEventListener("click", () => {
     gsap.to(".navbar-mobile", {
-      y: "-100%",
+      y: "-120%",
       duration: 1,
       ease: "power1.inOut",
     });
