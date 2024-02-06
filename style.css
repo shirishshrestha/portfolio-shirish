@@ -1019,6 +1019,10 @@ main {
     position: relative;
   }
 
+  main {
+    height: calc(100% - 4rem);
+  }
+
   .navbar {
     display: none;
   }

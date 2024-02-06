@@ -194,8 +194,6 @@ if (window.innerWidth >= 1100) {
       });
     },
   });
-} else if (window.innerWidth < 1100) {
-  document.querySelector(".project__images").style.display = "none";
 }
 
 if (window.innerWidth >= 1150) {
