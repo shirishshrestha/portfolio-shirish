@@ -20,7 +20,7 @@ hamburger.addEventListener("click", () => {
     ease: "power1.inOut",
   });
   time.from(".navbar-mobile li", {
-    x: "-100%",
+    x: "-115%",
     duration: 0.5,
     stagger: 0.1,
     opacity: 0,
@@ -32,7 +32,7 @@ const cross = document.querySelector(".cross");
 const navbar = document.querySelectorAll(".navbar-mobile li");
 cross.addEventListener("click", () => {
   gsap.to(".navbar-mobile", {
-    y: "-120%",
+    y: "-115%",
     duration: 1,
     ease: "power1.inOut",
   });

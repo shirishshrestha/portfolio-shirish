@@ -1037,11 +1037,11 @@ main {
   }
 
   .navbar-mobile {
-    display: block;
+    display: inline;
     position: absolute;
     height: 100vh;
     width: 100%;
-    top: -120%;
+    top: -115%;
     display: flex;
     align-items: center;
     padding-left: 2rem;
@@ -1051,7 +1051,7 @@ main {
 
   .cross {
     position: absolute;
-    top: 5%;
+    top: 15%;
     right: 5%;
     font-size: 2rem;
   }
