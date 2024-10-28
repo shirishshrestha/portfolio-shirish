@@ -660,6 +660,11 @@ main {
   color: #e9f1f3ec;
 }
 
+#loadingMessage {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
 #contactForm input:focus {
   border-bottom: 1px solid #e9f1f3;
 }

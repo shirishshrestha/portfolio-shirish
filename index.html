@@ -441,10 +441,12 @@
                 Your message:
                 <input required name="message" />
               </label>
-              <button class="button form__btn" type="submit">
-                <p>Send Message</p>
+              <button class="button form__btn" type="submit" id="submitBtn">
+                <p id="btnText">Send Message</p>
               </button>
             </form>
+            <p id="loadingMessage" style="display: none">Loading...</p>
+            <!-- Loading Message -->
 
             <div id="successMessage">
               Your form has been successfully submitted.
