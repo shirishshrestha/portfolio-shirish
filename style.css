@@ -1017,7 +1017,7 @@ main {
 }
 
 /* smart phones */
-@media (width<500px) {
+@media (width<640px) {
   .header {
     padding: 1rem;
     height: 4rem;
